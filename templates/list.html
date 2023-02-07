@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<title>Flask Application</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+<style><!DOCTYPE html>
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+
+<body>
+
+      
+<div class="" style="background-color:blue;" >
+<div class="clearfix">
+           
+<div class="col-md-12">
+<center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+<center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
+<center><p style="font-size:25px;color:white;margin-top:10px;">Six days FDP on Python A-Z</p></center> 
+</div>
+</div>
+</div>
+<div class="container">
+ <div class="row">
+   <div class="col-sm-8">
+    
+    <div class="table-responsive">
+      
+      <table class="table table-bordered; align="center; margin-left:auto;margin-right:auto;">
+       <thead><tr><th>Id</th>
+         <th>Full Name</th>
+         <th>Address</th>
+         <th>city</th>
+         <th>Pincode</th>
+         
+    </thead>
+    <tbody>
+      
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td>{{row["addr"]}}</td>
+               <td>{{ row["city"]}}</td>
+               <td>{{row["pin"]}}</td>
+               
+            </tr>
+         {% endfor %}
+      
+     </tbody>
+     </table>
+   </div>
+</div>
+</div>
+<br>
+        <a href="/" allign="center"">
+    <button><center>Home</center></button>
+  
+  
+       
+<div class="" style="background-color:blue;" >
+<div class="clearfix">
+           
+<div class="col-md-12">
+ <center><p style="font-size:25px;color:white;margin-top:20px;">Experiment Performed in  FDP on Python A-Z </p></center> 
+</div>
+</div>
+</div>
+</body>
+</html>
